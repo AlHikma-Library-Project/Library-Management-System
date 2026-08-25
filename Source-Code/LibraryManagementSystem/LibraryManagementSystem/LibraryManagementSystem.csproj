@@ -53,6 +53,12 @@
     <Compile Include="FrmBooks.Designer.cs">
       <DependentUpon>FrmBooks.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBorrow.Designer.cs">
+      <DependentUpon>FrmBorrow.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,10 +77,25 @@
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMembers.Designer.cs">
+      <DependentUpon>FrmMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReports.Designer.cs">
+      <DependentUpon>FrmReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmBooks.resx">
       <DependentUpon>FrmBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBorrow.resx">
+      <DependentUpon>FrmBorrow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
@@ -84,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMembers.resx">
+      <DependentUpon>FrmMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReports.resx">
+      <DependentUpon>FrmReports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

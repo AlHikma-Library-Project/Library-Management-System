@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -44,8 +45,7 @@
             this.btnMembers = new System.Windows.Forms.Button();
             this.btnBooks = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -54,13 +54,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
             // 
             this.pnlMenu.AutoSize = true;
             this.pnlMenu.BackColor = System.Drawing.Color.Navy;
-            this.pnlMenu.Controls.Add(this.button2);
+            this.pnlMenu.Controls.Add(this.pictureBox8);
             this.pnlMenu.Controls.Add(this.btnHome);
             this.pnlMenu.Controls.Add(this.pictureBox7);
             this.pnlMenu.Controls.Add(this.pictureBox6);
@@ -82,11 +83,26 @@
             this.pnlMenu.Size = new System.Drawing.Size(259, 603);
             this.pnlMenu.TabIndex = 1;
             // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Navy;
+            this.btnHome.FlatAppearance.BorderSize = 0;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Location = new System.Drawing.Point(122, 488);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(106, 35);
+            this.btnHome.TabIndex = 10;
+            this.btnHome.Text = "Dashboard";
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(50, 138);
+            this.pictureBox7.Location = new System.Drawing.Point(50, 157);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(42, 38);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -109,7 +125,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(50, 451);
+            this.pictureBox5.Location = new System.Drawing.Point(50, 425);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(42, 33);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -121,7 +137,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(50, 372);
+            this.pictureBox4.Location = new System.Drawing.Point(50, 362);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(42, 29);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -132,18 +148,19 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(50, 299);
+            this.pictureBox3.Location = new System.Drawing.Point(50, 294);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(42, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(50, 222);
+            this.pictureBox2.Location = new System.Drawing.Point(50, 226);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(42, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -153,10 +170,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(81, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(216, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -166,7 +185,7 @@
             this.lblRole.AutoSize = true;
             this.lblRole.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRole.ForeColor = System.Drawing.Color.White;
-            this.lblRole.Location = new System.Drawing.Point(155, 147);
+            this.lblRole.Location = new System.Drawing.Point(127, 172);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(45, 23);
             this.lblRole.TabIndex = 2;
@@ -193,7 +212,7 @@
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReports.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.Color.White;
-            this.btnReports.Location = new System.Drawing.Point(122, 439);
+            this.btnReports.Location = new System.Drawing.Point(107, 425);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(121, 45);
             this.btnReports.TabIndex = 1;
@@ -207,12 +226,13 @@
             this.btnBorrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrow.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrow.ForeColor = System.Drawing.Color.White;
-            this.btnBorrow.Location = new System.Drawing.Point(122, 359);
+            this.btnBorrow.Location = new System.Drawing.Point(107, 362);
             this.btnBorrow.Name = "btnBorrow";
             this.btnBorrow.Size = new System.Drawing.Size(121, 45);
             this.btnBorrow.TabIndex = 1;
             this.btnBorrow.Text = "Borrowings";
             this.btnBorrow.UseVisualStyleBackColor = true;
+            this.btnBorrow.Click += new System.EventHandler(this.btnBorrow_Click);
             // 
             // btnMembers
             // 
@@ -220,7 +240,7 @@
             this.btnMembers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMembers.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMembers.ForeColor = System.Drawing.Color.White;
-            this.btnMembers.Location = new System.Drawing.Point(122, 286);
+            this.btnMembers.Location = new System.Drawing.Point(107, 294);
             this.btnMembers.Name = "btnMembers";
             this.btnMembers.Size = new System.Drawing.Size(121, 45);
             this.btnMembers.TabIndex = 1;
@@ -234,7 +254,7 @@
             this.btnBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBooks.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBooks.ForeColor = System.Drawing.Color.White;
-            this.btnBooks.Location = new System.Drawing.Point(122, 209);
+            this.btnBooks.Location = new System.Drawing.Point(107, 213);
             this.btnBooks.Name = "btnBooks";
             this.btnBooks.Size = new System.Drawing.Size(121, 45);
             this.btnBooks.TabIndex = 1;
@@ -247,35 +267,22 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(32, 65);
+            this.lblTitle.Location = new System.Drawing.Point(17, 115);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(211, 38);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Library System";
             // 
-            // btnHome
+            // pictureBox8
             // 
-            this.btnHome.BackColor = System.Drawing.Color.Navy;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Location = new System.Drawing.Point(122, 497);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(106, 35);
-            this.btnHome.TabIndex = 10;
-            this.btnHome.Text = "Dashboard";
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(143, 511);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(10, 10);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(24, 488);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(92, 52);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 11;
+            this.pictureBox8.TabStop = false;
             // 
             // FrmMain
             // 
@@ -298,6 +305,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,7 +328,7 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

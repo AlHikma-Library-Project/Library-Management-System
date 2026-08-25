@@ -94,32 +94,28 @@ namespace LibraryManagementSystem
         // =========================================
         private void btnMembers_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(
-                "Members page will be added next.",
-                "Members",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information
-            );
+            CloseChildForms();
+
+            FrmMembers members = new FrmMembers();
+
+            members.MdiParent = this;
+            members.FormBorderStyle = FormBorderStyle.None;
+            members.Dock = DockStyle.Fill;
+
+            members.Show();
         }
 
         // =========================================
         // Borrowing
         // =========================================
-        private void btnBorrow_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(
-                "Borrowing page will be added later.",
-                "Borrowing",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information
-            );
-        }
+        // سنربط صفحة Borrowing هنا لاحقًا
 
         // =========================================
         // Reports
         // =========================================
         private void btnReports_Click(object sender, EventArgs e)
         {
+            // Employee لا يملك صلاحية Reports
             if (userRole == "Employee")
             {
                 MessageBox.Show(
@@ -132,12 +128,17 @@ namespace LibraryManagementSystem
                 return;
             }
 
-            MessageBox.Show(
-                "Reports page will be added later.",
-                "Reports",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information
-            );
+            // إغلاق الصفحة الحالية
+            CloseChildForms();
+
+            // فتح صفحة Reports
+            FrmReports reports = new FrmReports();
+
+            reports.MdiParent = this;
+            reports.FormBorderStyle = FormBorderStyle.None;
+            reports.Dock = DockStyle.Fill;
+
+            reports.Show();
         }
 
         // =========================================
@@ -149,7 +150,7 @@ namespace LibraryManagementSystem
         }
 
         // =========================================
-        // Events قديمة مرتبطة بالـ Designer
+        // Events قديمة مرتبطة بالـDesigner
         // لا تحذفها
         // =========================================
         private void lblRole_Click(object sender, EventArgs e)
@@ -163,8 +164,24 @@ namespace LibraryManagementSystem
         private void pictureBox5_Click(object sender, EventArgs e)
         {
         }
+        private void btnBorrow_Click(object sender, EventArgs e)
+        {
+            CloseChildForms();
+
+            FrmBorrow borrow = new FrmBorrow();
+
+            borrow.MdiParent = this;
+            borrow.FormBorderStyle = FormBorderStyle.None;
+            borrow.Dock = DockStyle.Fill;
+
+            borrow.Show();
+        }
 
         private void pictureBox7_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
         }
     }

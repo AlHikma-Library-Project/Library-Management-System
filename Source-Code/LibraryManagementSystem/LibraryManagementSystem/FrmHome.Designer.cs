@@ -69,7 +69,7 @@
             this.lblDashboard.AutoSize = true;
             this.lblDashboard.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDashboard.ForeColor = System.Drawing.Color.Navy;
-            this.lblDashboard.Location = new System.Drawing.Point(330, 9);
+            this.lblDashboard.Location = new System.Drawing.Point(138, 9);
             this.lblDashboard.Name = "lblDashboard";
             this.lblDashboard.Size = new System.Drawing.Size(211, 50);
             this.lblDashboard.TabIndex = 0;
@@ -81,7 +81,7 @@
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.DimGray;
-            this.lblWelcome.Location = new System.Drawing.Point(227, 59);
+            this.lblWelcome.Location = new System.Drawing.Point(28, 59);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(363, 25);
             this.lblWelcome.TabIndex = 1;
@@ -94,7 +94,7 @@
             this.pnlBooks.Controls.Add(this.pictureBox3);
             this.pnlBooks.Controls.Add(this.lblTotalBooks);
             this.pnlBooks.Controls.Add(this.lblBooksText);
-            this.pnlBooks.Location = new System.Drawing.Point(232, 87);
+            this.pnlBooks.Location = new System.Drawing.Point(18, 87);
             this.pnlBooks.Name = "pnlBooks";
             this.pnlBooks.Size = new System.Drawing.Size(211, 106);
             this.pnlBooks.TabIndex = 2;
@@ -137,7 +137,7 @@
             this.pnlMembers.Controls.Add(this.pictureBox4);
             this.pnlMembers.Controls.Add(this.lblTotalMembers);
             this.pnlMembers.Controls.Add(this.lblMembersText);
-            this.pnlMembers.Location = new System.Drawing.Point(476, 87);
+            this.pnlMembers.Location = new System.Drawing.Point(249, 87);
             this.pnlMembers.Name = "pnlMembers";
             this.pnlMembers.Size = new System.Drawing.Size(211, 106);
             this.pnlMembers.TabIndex = 3;
@@ -181,7 +181,7 @@
             this.pnlBorrowed.Controls.Add(this.pictureBox5);
             this.pnlBorrowed.Controls.Add(this.lblBorrowed);
             this.pnlBorrowed.Controls.Add(this.lblBorrowedText);
-            this.pnlBorrowed.Location = new System.Drawing.Point(232, 209);
+            this.pnlBorrowed.Location = new System.Drawing.Point(18, 209);
             this.pnlBorrowed.Name = "pnlBorrowed";
             this.pnlBorrowed.Size = new System.Drawing.Size(211, 105);
             this.pnlBorrowed.TabIndex = 0;
@@ -225,7 +225,7 @@
             this.pnlAvailable.Controls.Add(this.lblAvailable);
             this.pnlAvailable.Controls.Add(this.lblAvailableText);
             this.pnlAvailable.ForeColor = System.Drawing.Color.White;
-            this.pnlAvailable.Location = new System.Drawing.Point(476, 209);
+            this.pnlAvailable.Location = new System.Drawing.Point(249, 209);
             this.pnlAvailable.Name = "pnlAvailable";
             this.pnlAvailable.Size = new System.Drawing.Size(211, 105);
             this.pnlAvailable.TabIndex = 4;
@@ -282,7 +282,7 @@
             this.dgvRecent.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRecent.BackgroundColor = System.Drawing.Color.White;
             this.dgvRecent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRecent.Location = new System.Drawing.Point(124, 351);
+            this.dgvRecent.Location = new System.Drawing.Point(12, 351);
             this.dgvRecent.MultiSelect = false;
             this.dgvRecent.Name = "dgvRecent";
             this.dgvRecent.ReadOnly = true;
@@ -290,23 +290,25 @@
             this.dgvRecent.RowHeadersWidth = 51;
             this.dgvRecent.RowTemplate.Height = 24;
             this.dgvRecent.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRecent.Size = new System.Drawing.Size(540, 180);
+            this.dgvRecent.Size = new System.Drawing.Size(695, 180);
             this.dgvRecent.TabIndex = 6;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(466, 63);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(209, 282);
+            this.pictureBox1.Size = new System.Drawing.Size(259, 282);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(232, 9);
+            this.pictureBox2.Location = new System.Drawing.Point(18, 9);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

@@ -624,5 +624,10 @@ namespace LibraryManagementSystem
         {
             btnAdd_Click(sender, e);
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
